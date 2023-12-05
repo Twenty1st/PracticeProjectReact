@@ -1,0 +1,38 @@
+.carForm {
+	display: flex;
+	margin: 10px auto 20px;
+	flex-wrap: wrap;
+}
+
+/* .carForm input {
+	padding: 5px 10px;
+}
+
+.carForm input {
+	padding: 5px 10px;
+	margin: 10px;
+	border: 1px solid aqua;
+	outline: none;
+}
+
+.carForm input:focus {
+	border-color: aquamarine;
+} */
+
+.btn {
+	display: block;
+	padding: 6px 40px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: coral;
+}
+.error_msg {
+	margin: 0;
+	padding: 0;
+	color: red;
+}

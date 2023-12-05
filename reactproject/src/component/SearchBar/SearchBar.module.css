@@ -1,0 +1,67 @@
+.grow {
+	flex-grow: 1;
+}
+
+.menuButton {
+	margin-right: 8px; /* theme.spacing(2) */
+}
+
+.title {
+	display: none;
+}
+
+@media (min-width: 600px) {
+	.title {
+		display: block;
+	}
+}
+
+.search {
+	position: relative;
+	border-radius: 4px; /* theme.shape.borderRadius */
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.search:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+.searchMobile {
+	margin-right: 8px; /* theme.spacing(2) */
+	margin-left: 0;
+	width: 100%;
+}
+
+@media (min-width: 600px) {
+	.searchMobile {
+		margin-left: 24px; /* theme.spacing(3) */
+		width: auto;
+	}
+}
+
+.searchIcon {
+	padding: 12px; /* theme.spacing(0, 2) */
+
+	height: 100%;
+	position: absolute;
+	pointer-events: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inputRoot {
+	color: inherit;
+	padding: 4px 30px;
+}
+
+.inputInput {
+	/* /theme.spacing(1, 1, 1, 0) */
+	padding-left: calc(1em + 16px); /* `calc(1em + ${theme.spacing(4)}px)` */
+	transition: width 0.3s ease-in-out; /* theme.transitions.create('width') */
+	width: 100%;
+
+	@media (min-width: 960px) {
+		width: 125px; /* theme.breakpoints.up('md') */
+	}
+}
