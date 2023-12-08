@@ -1,7 +1,7 @@
 //работа с данными
 
 import { ICarData } from '../types/cars.interface'
-import { FetchgetById, addData, countData, deleteData, fetchgetData } from './fetchQuery'
+import { FetchgetById, addData, countData, deleteData, fetchgetData, host } from './fetchQuery'
 // const cars = [
 // 	{ id: '1', name: 'BMW m1', price: '500000', img: '/car1.jpeg' },
 // 	{ id: '2', name: 'BMW z1', price: '100000', img: '/car2.jpg' },
@@ -88,7 +88,7 @@ interface IuserData {
 
 const RegisterUser = async ({ userData }: { userData: IuserData }) => {
 	try {
-		const response = await fetch('http://localhost:3001/registration', {
+		const response = await fetch(`http://${host}/registration`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -116,7 +116,7 @@ const RegisterUser = async ({ userData }: { userData: IuserData }) => {
 
 const CheckAuthUser = async ({ login, pwd }: { login: string; pwd: string }) => {
 	try {
-		const response = await fetch('http://localhost:3001/login', {
+		const response = await fetch(`http://${host}/login`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
